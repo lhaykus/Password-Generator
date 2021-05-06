@@ -39,13 +39,13 @@ function generatePassword() {
     //}
 
     //ask user if they want to have lower case letters in password
-    const lowerCase = confirm('Would you like to include lower case letters in your password?');
+    const lowerCase = confirm('Would you like to include Lower Case letters in your password?');
   
     //ask user to confirm if they want special characters in password 
-    const specialCharacters = confirm('Would you like to include special characters in your password?');
+    const specialCharacters = confirm('Would you like to include Special Characters in your password?');
   
     //ask user to confirm if they want numbers in their password
-    const numbers = confirm('Would you like to include numbers in your password?');
+    const numbers = confirm('Would you like to include Numbers in your password?');
   
     //ask users to confirm if they want uppercase letters in password
     const upperCase = confirm('Would you like to include Upper Case letters in your password?');
