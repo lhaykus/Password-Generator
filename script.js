@@ -10,24 +10,14 @@ const password ="";
 const total =[];
 
 
-//state variables
-//create arrays for possible characters to be used
-//ask user what characters they want to use using confirm
-//ask user how long they want their password to be between 8-128
-//check to make sure numbers are between 8-128, create if statements for if its not met
-//check to make sure at least one of the characters is chosen, if not create alert to make them choose something
-//create if statements for what was chosen ex:
-//if they said yes to everything create if statement to create a password with every character
-//if they said yes to uppercase, numbers, lowercase but no to specail characters then create a password with those 3 and so forth using if true statements
-
-
 function generatePassword() {
 
     //Prompt asking how long user wants their password to be//
-    const passwordLength = prompt("Pick bewteen numbers 8-128 to determine password lenght");
+    const passwordLength = prompt("Pick a number inbetween 8-128 to determine your password lenght");
     //if there is no number entered
     if (!passwordLength) {
         alert("Must enter a number between 8-128 for password lenght");
+        return;
         //If number is not between 8-128, alert user to put a correct number.
     } else if (passwordLength < 8 && passwordLength > 128) {
         alert("Password must be between 8-128 letters long.");
