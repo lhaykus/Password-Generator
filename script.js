@@ -3,12 +3,12 @@ var generateBtn = document.querySelector("#generate");
 
 //Create array of possible characters that can be used in password
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-const specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "?",]
+const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+const specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "?","/","|","{","}","[","]","'",".",",",";",":","~","`"];
 const password ="";
 const total =[];
-//"',-./:;<>?@[\]_`{|}~
+
 
 //state variables
 //create arrays for possible characters to be used
@@ -80,7 +80,7 @@ if (numbers===true) {
  for (let i = 0; i < total.length; i++) {
      password= password + Math.floor(Math.random()*total.length);  
  }
- console.log(password)
+ console.log(password);
 
 
 
