@@ -34,11 +34,11 @@ function generatePassword() {
         //If number is not between 8-128, alert user to put a correct number.
     } else if (passwordLength < 8 || passwordLength > 128) {
         alert("Password must be between 8-128 letters long.");
-        
-    
+
+
     } else if (passwordLength > 8 && passwordLength < 128) {
         alert("next");
-       console.log(passwordLength);
+        console.log(passwordLength);
     }
 
 
@@ -62,58 +62,45 @@ function generatePassword() {
 
     //if statement for if user wants lower case letters, use the concat method to merge userSelect array with lowerCase array to create the userSelect array
     if (lowerCaseConfirm === true) {
-      //  userSelect = userSelect + Math.floor(Math.random() * lowerCase.length);
-       // finalPassword = finalPassword.concat(lowerCase);
-       userSelect = userSelect.concat(lowerCase);
-       console.log(userSelect);
+        userSelect = userSelect.concat(lowerCase);
+        console.log(userSelect);
     }
-    
+
     //if statement for if numbers were picked, use concat method to merge UserSelect array with numbers array
 
     if (numbersConfirm === true) {
-      //  userSelect = userSelect + Math.floor(Math.random() * numbers.length);
-       // finalPassword = finalPassword.concat(numbers);
         userSelect = userSelect.concat(numbers);
         console.log(userSelect);
     }
 
     //if statement for if uppercase letters were picked, use concat to merge UsersSelect with upperCase array
     if (upperCaseConfirm === true) {
-       userSelect = userSelect.concat(upperCase);
-       console.log(userSelect);
-       // userSelect = userSelect + Math.floor(Math.random() * upperCase.length);
-        //finalPassword = finalPassword.concat(upperCase);
+        userSelect = userSelect.concat(upperCase);
+        console.log(userSelect);
+
     }
+
     //if statement for if special characters were picked, use concat to merge UserSelect with specialCharacters array
     if (specialCharactersConfirm === true) {
-      userSelect = userSelect.concat(specialCharacters);
-       console.log(userSelect);
-      //  userSelect = userSelect + Math.floor(Math.random() * specialCharacters.length);
-      //  finalPassword = finalPassword.concat(specialCharacters);
+        userSelect = userSelect.concat(specialCharacters);
+        console.log(userSelect);
+
     }
 
     console.log(userSelect);
 
 
 
-
-    //all characters from above combined and a for loop to randomly choose out of the finalPassword array
+    //For loop to choose random finalPassword
+    //Using Math.random to choose  random characters from the userSelect choices, and then pushing those characters into the finalPassword array to get the final password
 
     for (let i = 0; i < passwordLength; i++) {
-       // finalPassword += userSelect.charAt(Math.floor(Math.random() * userSelect.length));
-      var index = Math.floor(Math.random()*userSelect.length);
-      finalPassword.push(userSelect[index]);
-       console.log(finalPassword);
 
-
-    //randomPass = Math.floor(Math.random() * userSelect.length);
-     ///finalPassword.push([randomPass]);
-
-     console.log(finalPassword);
-
-        
+        var index = Math.floor(Math.random() * userSelect.length);
+        finalPassword.push(userSelect[index]);
+        console.log(finalPassword);
     }
-    
+
     return finalPassword;
 
 
