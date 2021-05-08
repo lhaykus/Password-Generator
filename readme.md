@@ -7,4 +7,4 @@ Final Project
 
 https://lhaykus.github.io/Password-Generator/
 
-
+![password-generator]
