@@ -109,10 +109,12 @@ function generatePassword() {
     //randomPass = Math.floor(Math.random() * userSelect.length);
      ///finalPassword.push([randomPass]);
 
-        return finalPassword;
+     console.log(finalPassword);
+
+        
     }
     
-    console.log(finalPassword);
+    return finalPassword;
 
 
 }
