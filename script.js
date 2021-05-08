@@ -89,9 +89,9 @@ function generatePassword() {
 
     //all characters from above combined and a for loop to randomly choose out of the finalPassword array
 
-    for (let i = 0; i < passwordLength; i++) {
+    for (let i = 0; i < pas; i++) {
         var index= Math.floor(Math.random()*userSelect.length);
-        finalPassword= finalPassword + userSelect[index];
+        finalPassword = finalPassword + userSelect[index];
 
 
         //randomPass = Math.floor(Math.random() * userSelect.length);
